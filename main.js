@@ -1,14 +1,13 @@
-let all = [];
+let names = [];
+let number;
 
-for (let f = 0; f < 10; f++){
-    let number = prompt("");
-    all.push(Number(number));
+for (let n = 0; n < 7; n++) {
+    number = Number(prompt("Enter one"));
+    names.push(number);
 }
 
-let result = 0;
+names.push(8);
+names.unshift(1);
+console.log(names);
+console.log(names.length);
 
-for (let s of all){
-    result += s;
-}
-
-console.log(result);
